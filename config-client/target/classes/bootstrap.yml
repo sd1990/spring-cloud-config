@@ -2,9 +2,11 @@ spring:
   application:
     name: config-client
   cloud:
+    services:
+      registrationMethod: route
     config:
-      profile: default
-      label: master
+      name: props
+      enabled: true
       uri:  http://localhost:8001
 
 server:
