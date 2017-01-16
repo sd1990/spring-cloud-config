@@ -1,11 +1,14 @@
 spring:
   application:
     name: config-client
+  profiles:
+    active: dev
   cloud:
     services:
       registrationMethod: route
     config:
-      name: props
+      failFast: true
+      name: prop
       enabled: true
       uri:  http://localhost:8001
 

@@ -20,7 +20,7 @@ public class Application {
         SpringApplication.run(Application.class, args);
     }
 
-    @Value("${lucky-word}")
+    @Value("${name}")
     String luckyWord;
 
     @RequestMapping("/")
